@@ -8,6 +8,9 @@ class AboutPage extends Component {
   }
 
   back = () => {
+    // do more stuff before redireting
+
+    //redirecting
     this.props.history.push("/");
   } 
 

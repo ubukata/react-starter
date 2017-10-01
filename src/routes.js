@@ -4,11 +4,12 @@ import {
   Route,
   Link
 } from 'react-router-dom';
+import App from './screens/App';
 import {
   HomePage,
-  AboutPage
+  AboutPage,
+  SignUpPage
 } from './screens/containers/index';
-import App from './screens/App';
 
 class Routes extends Component {
   render() {
@@ -18,6 +19,7 @@ class Routes extends Component {
           <div>
             <Route exact path="/" component={HomePage} />
             <Route path="/about" component={AboutPage} />
+            <Route path="/account/signup" component={SignUpPage} />
           </div>
         </App>
       </Router>
